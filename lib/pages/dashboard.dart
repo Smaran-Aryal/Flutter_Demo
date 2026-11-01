@@ -13,8 +13,9 @@ class dashboard extends StatefulWidget {
 
 class dashboardState extends State<dashboard> {
 
-  horizontalitem(size, String title, url, date
-      ,Articles art){
+  horizontalitem(size, String title, url, date,Articles art){
+    var formatteddate = Static.datetimeconverter(date);
+    date = formatteddate;
     return GestureDetector(
       onTap: (){
         //katai save garnu paryo
@@ -76,10 +77,9 @@ class dashboardState extends State<dashboard> {
       ),
     );
   }
-
-  static verticalllistitem(
-      context,size,String title, url,date,source,
-      Articles? art){
+  static verticalllistitem(context,size,String title, url,date,source, Articles? art){
+    var formatteddate = Static.datetimeconverter(date);
+    date = formatteddate;
     return  GestureDetector(
       onTap: (){
         //katai save garnu paryo
