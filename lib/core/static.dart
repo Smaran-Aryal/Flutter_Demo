@@ -1,3 +1,5 @@
+import 'package:demopcpsseca/model/news.dart';
+
 class Static {
   //static datas
   //https://newsapi.org/
@@ -9,5 +11,6 @@ class Static {
   static String path = "v2/everything";
   static String apikey = "a25a0c0b883c4f389ff5c23da0f9dfea";
 
+  static Articles? article;
 
 }
